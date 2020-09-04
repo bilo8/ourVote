@@ -1,0 +1,117 @@
+.up {
+    width: 4rem;
+    height: 4rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: $color-white;
+    cursor: pointer;
+    border-radius: 50%;
+    background: $color-primary;
+    text-align: center;
+    transition: all .5s;
+
+    @include respond (tab-port) {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__none {
+        @include respond (tab-port) {
+            display: none;
+        }
+    }
+
+    &__icon {
+
+        font-size: 2rem !important;
+        line-height: 4rem !important;
+
+        @include respond (tab-port) {
+            font-size: 2.5rem !important;
+        }
+    }
+
+    &:hover {   
+        // background: $color-primary; 
+        transform: rotateZ(-90deg);
+
+        @include respond(tab-port) {
+            transform: rotateZ(0deg);
+        }
+    }
+
+    
+}
+
+.plus {
+    position: fixed;
+    right: 4rem;
+    bottom: 5rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    background: $color-primary;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .5s;
+
+    &__icon {
+        font-size: 1.6rem !important;
+        line-height: 4rem !important;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    @include respond (tab-port) {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+}
+
+
+.btn {    
+    cursor: pointer;
+    height: 4rem;
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+    margin-left: 1rem;
+    border-radius: 0.35rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    &-block {
+        display: block;
+        width: 96%;
+    }
+
+    &-dark {
+        color: #fff;
+        background-color: #343a40;
+        
+
+        &:hover {
+            color: #fff;
+            background-color: #23272b;
+            border-color: #1d2124; 
+        }
+
+        &:focus {
+            color: #fff;
+            background-color: #23272b;
+            border-color: #1d2124;
+            box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+         }
+    }
+}
+

@@ -1,0 +1,396 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .8);
+    z-index: 9999;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    @include respond (tab-port) {
+        height: 100%;
+    }
+}
+
+.poppost {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .5);
+    z-index: 1050;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @include respond(phone) {
+        height: 100%;
+    }
+
+    &__content {
+        @include absCenter;
+        width: 52rem;
+        height: 50rem;
+        background-color: $color-white;
+        box-shadow: .2rem .2rem .5rem $color-primary;
+        border-radius: 5px;
+        display: table;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .5s;
+
+        @include respond (phone) {
+            width: 33rem;
+            height: 30rem;
+        }
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__head {
+        width: 100%;
+        padding: 2rem 1.5rem;
+        border-bottom: .1px solid $color-grey;
+
+        &-title {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            color: $color-primary;
+            text-align: left;
+        }
+    }
+    &__body {
+        position: relative;
+        padding: 1rem;
+        min-width: 100%;
+    }
+    &__input {
+        position: relative;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &-icon {
+            margin-right: -1px;
+            display: flex;
+        }
+        
+        &-text {
+            position: relative;
+            flex: 1 1 auto;
+            width: 1%;
+            display: block;
+            padding: 0.375rem 0.75rem;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            &:focus {
+                border: $color-primary;
+            }
+        }
+    }
+    &__span {
+        display: flex;
+        align-items: center;
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &__close {
+        position: absolute;
+        right: 3rem;
+        top: 1.5rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: $color-grey;
+        &:hover {
+            color: $color-black;
+        }
+    }
+}
+
+textarea.poppost__input-text {
+    resize: none;
+    height: 25rem;
+}
+
+.popmore {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .8);
+    z-index: 9999;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+     @include respond(phone) {
+        height: 100%;
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__content {
+
+        @include absCenter;
+        width: 70rem;
+        height: 50rem;
+        background-color: $color-white;
+        box-shadow: .2rem .2rem .5rem $color-primary;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr 1fr .1fr;
+        grid-template-areas: "head" "body" "footer";
+        text-align: center;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .5s;
+
+        @include respond (phone) {
+            width: 33rem;
+            height: 50rem;
+        }
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    &__head {
+        width: 100%;
+        padding: 2rem 1.5rem;
+        border-bottom: .1px solid rgba(0, 0, 0, 0.125);
+        grid-area: head;
+
+        &-title {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            color: $color-primary;
+            text-align: left;
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 3rem;
+        top: 1.5rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: $color-grey;
+        &:hover {
+            color: $color-black;
+        }
+    }
+    &__body {
+        grid-area: body;
+        height: 100%;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        position: relative;
+        flex: 1 1 auto;
+    }
+    
+    &__card {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(#258bdf, #258bdf) white no-repeat 0 0;
+            background-size: 0 100%;
+            animation-name: stripes;
+            animation-duration: .5s;
+            animation-fill-mode: both;
+        }
+    }
+    &__user {
+        display: flex !important;
+        flex-direction: row !important;
+        &-img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+        }
+        &-name {
+            font-size: 1.5rem;
+            margin-left: 1.5rem;
+            margin-top: 1.5rem;
+        }
+    }
+    &__paragraph {
+        font-size: 2rem;
+        margin: 2rem 0;
+        text-align: left;
+    }
+    &__footer {
+        grid-area: footer;
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        padding: 1rem;
+    }
+    &__like {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        color: $color-black;
+    }
+}
+
+.dropup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .3);
+    z-index: 9999;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+
+    
+
+        @include respond (phone) {
+            &:target {
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+            } 
+        }   
+    
+         
+
+        @include respond(tab-port) {
+            
+            &:target {
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+            } 
+           
+        }
+    
+
+    &__card {
+        position: fixed;
+        bottom: -100%;
+        height: 28rem;
+        width: 100%;
+        background-color: $color-white;
+        padding: 1rem;
+        text-align: left;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    &:target &__card {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+        transition: all .3s ;
+    }
+
+    &__item {
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+       & i {
+           margin-right: 1rem;
+
+        }
+    }
+
+    &__link {
+        font-size: 2rem;
+        color: $color-black;
+
+        &-icon {
+            position: absolute;
+            font-size: 3rem;
+            right: 4rem;
+            top: 1rem;
+            color: $color-primary;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+
+        @include respond (phone) {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 3rem;
+        top: .5rem;
+        color: $color-black;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+   
+}

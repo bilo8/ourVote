@@ -1,0 +1,57 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: 'Baloo Tamma 2', cursive;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: #fafafa;
+}
+
+html {
+    font-family: 'sans-serif';
+    font-size: 62.5%;
+    line-height: 1.15;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #326ea6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #326ea6;
+}
+
+button {
+    &:focus {
+        outline-offset: 0;
+       
+    }
+}
+
+i {
+    &:focus {
+        outline:none;
+       
+    }
+}
+
+.show {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+  

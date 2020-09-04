@@ -1,0 +1,73 @@
+.header {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 8rem;
+    margin-bottom: 2rem;
+    background-color: $color-white;
+    padding:0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: .2rem .2rem .5rem $color-primary;
+
+    @include respond (tab-port) {
+        margin-bottom: 0;
+     }
+
+    &__title {
+        font-size: 2.8rem;
+        margin-left: 20rem;
+        color: rgba(0,0,0,.9);
+        cursor: pointer;
+        animation: MoveToRight 2s ease-out;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        @include respond (tab-port) {
+           margin-left: 0;
+        }
+
+    }
+
+    &__switcher {
+        position: absolute;
+        visibility: hidden;
+        left: -9999px;
+
+        @include respond(tab-port){
+
+            &:checked~nav {
+                right: 0;
+            }
+        }
+    }
+
+    &__open {
+        font-size:3rem;
+        cursor: pointer;
+        display: none;
+
+        // @include respond (tab-port) {
+        //     display: block;
+        // }
+    }
+
+    &__close {
+        font-size:3rem;
+        cursor: pointer;
+        display: none;
+
+        // @include respond (tab-port) {
+        //     display: block;
+        //     position: absolute;
+        //     top: 2.5rem;
+        //     right: 2rem;
+        // }
+    }
+
+
+}

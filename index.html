@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link rel="shortcut icon " type="image/png " href="img/Election-Polling-Box-icon.png">
+
+    <title>our vote</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+
+            <a href="#" class="header__title"> Our Vote</a>
+
+
+
+
+            <input type="checkbox" id="menu" class="header__switcher">
+            <label for="menu" class="header__open">
+                <i class="fas fa-bars"></i>
+               </label>
+
+            <nav class="navigation">
+
+                    <!--before login-->
+                <!-- <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#popup" class="navigation__link">Sign In</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
+                </ul> -->
+
+                    <!--after login-->
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <div class="navigation__item-user">
+                            <img src="img/person.jpg"> <span>bilal</span>
+
+                            <div class="navigation__item-user--none">
+                                <a href=""><i class="fas fa-cog"></i></a>
+                                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navigation__item"><a href="#poppost" class="navigation__link-user up up__none"><i class="fas fa-plus up__icon"></i></a></li>
+                    <li class="navigation__item">
+
+                        <div class="navigation__item-dropdown" >
+
+                            <button class="navigation__link-user navigation__item-dropdown--btn up" id="icon"><i class="fas fa-angle-down up__icon"></i></button>
+                            <div class="navigation__item-dropdown--content show" id="setting">
+
+                                <a href="#"><i class="fas fa-cog"></i></a>
+                                <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                                <div class="navigation__item-dropdown--circle">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+                <label for="menu" class="header__close">
+                    <i class="fas fa-times"></i>
+                </label>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="section-post">
+
+                <div class="row">
+
+                    <div class="card">
+
+                        <a href="#dropup" class="dropup__link-icon"><i class="fas fa-angle-down"></i></a>
+
+                        <div class="card__text-dropdown">
+
+                            <button class="card__text-btn"><i class="fas fa-angle-down"></i></button>
+
+
+                            <div class="card__text-dropdown--content">
+
+                                <a href="#"> <i class="far fa-bookmark"></i> Save Post</a>
+                                <a href="#"><i class="fas fa-cog"></i>Edit Post</a>
+                                <a href="#"> <i class="fas fa-bell"></i>Turn on notification</a>
+                                <a href="#"> <i class="fas fa-trash"></i>Delete Post</a>
+                                <a href="#"> <i class="fas fa-ban"></i>Hide Post</a>
+                                <a href="#"> <i class="fas fa-link"></i>Copy Link</a>
+
+
+                            </div>
+                        </div>
+
+                        <h3 class="card__text-name">Bilal harb</h3>
+                        <figure class="card__user">
+                            <img src="img/person.jpg" class="card__img">
+
+                            <figcaption class="card__name">
+                                Bilal harb
+                            </figcaption>
+                        </figure>
+                        <div class="card__text">
+                            <h3 class="card__text-title">post title</h3>
+                            <p class="card__text-paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                <a href="#popmore" class="card__text-paragraph--more">
+                                    <h6>Read more..</h6>
+                                </a>
+
+                                <a href="#" class="card__text-paragraph--like"><i class="fas fa-thumbs-up"></i><span> 100 </span></a>
+                                <a href="#" class="card__text-paragraph--cmnt"><i class="fas fa-comments"></i></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+
+                        <a href="#dropup" class="dropup__link-icon"><i class="fas fa-angle-down"></i></a>
+
+                        <div class="card__text-dropdown">
+
+                            <button class="card__text-btn"><i class="fas fa-angle-down"></i></button>
+
+
+                            <div class="card__text-dropdown--content">
+
+                                <a href="#"> <i class="far fa-bookmark"></i> Save Post</a>
+                                <a href="#"><i class="fas fa-cog"></i>Edit Post</a>
+                                <a href="#"> <i class="fas fa-bell"></i>Turn on notification</a>
+                                <a href="#"> <i class="fas fa-ban"></i>Hide Post</a>
+                                <a href="#"> <i class="fas fa-trash"></i>Delete Post</a>
+                                <a href="#"> <i class="fas fa-link"></i>Copy Link</a>
+
+
+                            </div>
+                        </div>
+
+                        <h3 class="card__text-name">Bilal harb</h3>
+                        <figure class="card__user">
+                            <img src="img/person.jpg" class="card__img">
+
+                            <figcaption class="card__name">
+                                Bilal harb
+                            </figcaption>
+                        </figure>
+                        <div class="card__text">
+                            <h3 class="card__text-title">post title</h3>
+                            <p class="card__text-paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                <a href="#popmore" class="card__text-paragraph--more">
+                                    <h6>Read more..</h6>
+                                </a>
+
+                                <a href="#" class="card__text-paragraph--like"><i class="fas fa-thumbs-up"></i><span> 100 </span></a>
+                                <a href="#" class="card__text-paragraph--cmnt"><i class="fas fa-comments"></i></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+
+                        <a href="#dropup" class="dropup__link-icon"><i class="fas fa-angle-down"></i></a>
+
+                        <div class="card__text-dropdown">
+
+                            <button class="card__text-btn"><i class="fas fa-angle-down"></i></button>
+
+
+                            <div class="card__text-dropdown--content">
+
+                                <a href="#"> <i class="far fa-bookmark"></i> Save Post</a>
+                                <a href="#"><i class="fas fa-cog"></i>Edit Post</a>
+                                <a href="#"> <i class="fas fa-bell"></i>Turn on notification</a>
+                                <a href="#"> <i class="fas fa-ban"></i>Hide Post</a>
+                                <a href="#"> <i class="fas fa-trash"></i>Delete Post</a>
+                                <a href="#"> <i class="fas fa-link"></i>Copy Link</a>
+
+
+                            </div>
+                        </div>
+
+                        <h3 class="card__text-name">Bilal harb</h3>
+                        <figure class="card__user">
+                            <img src="img/person.jpg" class="card__img">
+
+                            <figcaption class="card__name">
+                                Bilal harb
+                            </figcaption>
+                        </figure>
+                        <div class="card__text">
+                            <h3 class="card__text-title">post title</h3>
+                            <p class="card__text-paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                <a href="#popmore" class="card__text-paragraph--more">
+                                    <h6>Read more..</h6>
+                                </a>
+
+                                <a href="#" class="card__text-paragraph--like"><i class="fas fa-thumbs-up"></i><span> 100 </span></a>
+                                <a href="#" class="card__text-paragraph--cmnt"><i class="fas fa-comments"></i></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+
+                        <a href="#dropup" class="dropup__link-icon"><i class="fas fa-angle-down"></i></a>
+
+                        <div class="card__text-dropdown">
+
+                            <button class="card__text-btn"><i class="fas fa-angle-down"></i></button>
+
+
+                            <div class="card__text-dropdown--content">
+
+                                <a href="#"> <i class="far fa-bookmark"></i> Save Post</a>
+                                <a href="#"><i class="fas fa-cog"></i>Edit Post</a>
+                                <a href="#"> <i class="fas fa-bell"></i>Turn on notification</a>
+                                <a href="#"> <i class="fas fa-ban"></i>Hide Post</a>
+                                <a href="#"> <i class="fas fa-trash"></i>Delete Post</a>
+                                <a href="#"> <i class="fas fa-link"></i>Copy Link</a>
+
+
+                            </div>
+                        </div>
+
+                        <h3 class="card__text-name">Bilal harb</h3>
+                        <figure class="card__user">
+                            <img src="img/person.jpg" class="card__img">
+
+                            <figcaption class="card__name">
+                                Bilal harb
+                            </figcaption>
+                        </figure>
+                        <div class="card__text">
+                            <h3 class="card__text-title">post title</h3>
+                            <p class="card__text-paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                <a href="#popmore" class="card__text-paragraph--more">
+                                    <h6>Read more..</h6>
+                                </a>
+
+                                <a href="#" class="card__text-paragraph--like"><i class="fas fa-thumbs-up"></i><span> 100 </span></a>
+                                <a href="#" class="card__text-paragraph--cmnt"><i class="fas fa-comments"></i></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+
+                        <a href="#dropup" class="dropup__link-icon"><i class="fas fa-angle-down"></i></a>
+
+                        <div class="card__text-dropdown">
+
+                            <button class="card__text-btn"><i class="fas fa-angle-down"></i></button>
+
+
+                            <div class="card__text-dropdown--content">
+
+                                <a href="#"> <i class="far fa-bookmark"></i> Save Post</a>
+                                <a href="#"><i class="fas fa-cogs"></i>Edit Post</a>
+                                <a href="#"> <i class="fas fa-bell"></i>Turn on notification</a>
+                                <a href="#"> <i class="fas fa-ban"></i>Hide Post</a>
+                                <a href="#"> <i class="fas fa-trash"></i>Delete Post</a>
+                                <a href="#"> <i class="fas fa-link"></i>Copy Link</a>
+
+
+                            </div>
+                        </div>
+
+                        <h3 class="card__text-name">Bilal harb</h3>
+                        <figure class="card__user">
+                            <img src="img/person.jpg" class="card__img">
+
+                            <figcaption class="card__name">
+                                Bilal harb
+                            </figcaption>
+                        </figure>
+                        <div class="card__text">
+                            <h3 class="card__text-title">post title</h3>
+                            <p class="card__text-paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                <a href="#popmore" class="card__text-paragraph--more">
+                                    <h6>Read more..</h6>
+                                </a>
+
+                                <a href="#" class="card__text-paragraph--like"><i class="fas fa-thumbs-up"></i><span> 100 </span></a>
+                                <a href="#" class="card__text-paragraph--cmnt"><i class="fas fa-comments"></i></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="card__more">
+            <a href="#" class="card__btn"><i class="fas fa-arrow-alt-circle-down"></i> Load more </a>
+
+
+        </div>
+
+
+
+
+        <!--left side-->
+        <!-- <div class="sidebar">
+            <div class="sidebar__content">
+                <img src="img/issa.png" class="sidebar__content-img">
+            </div>
+        </div> -->
+
+        <!--right side-->
+
+        <div class="like">
+            <div class="like__head">Most like</div>
+            <div class="like__sep">
+                <div class="like__card">
+
+                    <div class="like__card-text">
+                        <h3 class="like__card-text--title">post title </h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                        <a href="" class="like__card-like"><span>100 </span></i><span> likes </span></a>
+
+                        <a href="" class="like__link"> <i class="fas fa-arrow-alt-circle-right"></i> </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="like__sep">
+                <div class="like__card">
+
+                    <div class="like__card-text">
+                        <h3 class="like__card-text--title">post title </h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                        <a href="#" class="like__card-like"><span>100 </span></i><span> likes </span></a>
+
+                        <a href="#" class="like__link"> <i class="fas fa-arrow-alt-circle-right"></i> </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" like__sep">
+                <div class="like__card">
+
+                    <div class="like__card-text">
+                        <h3 class="like__card-text--title">post title </h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                        <a href="#" class="like__card-like"><span>100 </span></i><span> likes </span></a>
+
+                        <a href="#" class="like__link"> <i class="fas fa-arrow-alt-circle-right"></i> </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" like__sep">
+                <div class="like__card">
+
+                    <div class="like__card-text">
+                        <h3 class="like__card-text--title">post title </h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                        <a href="#" class="like__card-like"><span>100 </span></i><span> likes </span></a>
+
+                        <a href="#" class="like__link"> <i class="fas fa-arrow-alt-circle-right"></i> </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" like__sep like__sep-no">
+                <div class="like__card">
+
+                    <div class="like__card-text">
+                        <h3 class="like__card-text--title">post title </h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                        <a href="#" class="like__card-like"><span>100 </span></i><span> likes </span></a>
+
+                        <a href="#" class="like__link"> <i class="fas fa-arrow-alt-circle-right"></i> </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <a href="#poppost" class="plus"><i class="fas fa-plus plus__icon"></i></a>
+
+
+        <!--footer-->
+        <footer class="footer">
+
+            <div class="footer__main">
+
+                <div class="footer__left footer__box">
+                    <h2 class="footer__heading">About Us</h2>
+                    <div class="footer__left-content">
+                        <p class="footer__left-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati rerum corporis quod omnis odio iusto voluptas similique consequatur quo magni sunt quasi pariatur architecto dolores, nisi aliquam alias! Voluptas!</p>
+                        <div class="footer__left-social">
+                            <a href="#" class="footer__left-social-link"><i class="fab fa-facebook footer__left-social-span"></i></a>
+                            <a href="#" class="footer__left-social-link"><i class="fab fa-instagram footer__left-social-span"></i></a>
+                            <a href="#" class="footer__left-social-link"><i class="fab fa-twitter footer__left-social-span"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__center footer__box">
+                    <h2 class="footer__heading">Adresse</h2>
+                    <div class="footer__center-content">
+                        <div class="footer__center-content--place">
+                            <span class="fa fa-map-marker"></span>
+                            <span class="text">Lebanon, Tripoli</span>
+                        </div>
+                        <div class="footer__center-content--phone">
+                            <span class="fa fa-phone"></span>
+                            <span class="text">+961-6111222</span>
+                        </div>
+                        <div class="footer__center-content--email">
+                            <span class="fa fa-envelope"></span>
+                            <span class="text">abc@example.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__right footer__box">
+                    <h2 class="footer__heading">subscribe</h2>
+                    <div class="footer__right-content">
+                        <form action="#" class="footer__right-content--form" autocomplete="off">
+                            <div class="footer__right-content--form---email">
+                                <div class="text">Email*</div>
+                                <input type="email" required>
+                            </div>
+
+                            <div class="footer__right-content--form---msg">
+                                <div class="text">message*</div>
+                                <textarea cols="25" rows="2" required></textarea>
+                            </div>
+
+                            <div class="footer__right-content--form---btn">
+                                <button type="submit">subscribe</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-center">
+                    <span class="credit footer__bottom-span">Created By <a href="#" class="footer__bottom-link">Bilal Harb</a> | </span>
+                    <span class="fa fa-copyright footer__bottom-span"></span><span class="footer__bottom-span"> 2020 All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+    <!-- read more -->
+
+    <div class="popmore" id="popmore">
+
+        <div class="popmore__content">
+            <div class="popmore__head">
+                <h3 class="popmore__head-title">post title</h3>
+                <a href="#" class="popmore__close">&times;</a>
+            </div>
+
+            <div class="popmore__body">
+                <div class="popmore__card">
+                    <div class="popmore__user">
+                        <img src="img/person.jpg" class="popmore__user-img">
+                        <h5 class="popmore__user-name">Bilal Harb</h5>
+                    </div>
+                    <p class="popmore__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias reprehenderit minus rep udiandae ullam, soluta saepe. Hic nisi consectetur dolorem omnis sit, architecto eveniet quo quis ullam beatae vero, pariatur quisquam?</p>
+                </div>
+            </div>
+
+            <div class="popmore__footer">
+                <a href="#" class="popmore__like"><i class="fas fa-thumbs-up"></i> <span> 100</span></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!--LogIn-->
+    <div class="popup" id="popup">
+        <div class="login-form" id="login">
+
+            <form action="post" class="form" autocomplete="off">
+
+                <div class="form__head">
+                    <a href="#" class="form__close">&times;</a>
+                    <h2 class="heading-secondary">Log In</h2>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Username" id="name" required>
+                    <!-- <lable for="name" class="form__label">Full name</lable> -->
+                </div>
+
+                <div class="form__group">
+                    <input type="password" class="form__input" placeholder="Password" id="Email" required>
+                    <!-- <lable for="Email" class="form__label">Email adresse</lable> -->
+                </div>
+            </form>
+            <div class="form__btn-log">
+                <a href="#">log in now</a>
+            </div>
+            <div class="form__sep">
+                or
+            </div>
+            <div class="form__btn-fb">
+                <a href="#">Continue with facebook</a>
+            </div>
+            <div class="form__btn-google">
+                <a href="#">Continue with google</a>
+            </div>
+
+            <div class="form__footer">
+                <a href="#" class="form__footer-link">Password reset</a>
+                <a href="#" class="form__footer-link" onclick="register(event)">Sign up now</a>
+            </div>
+
+        </div>
+
+        <div class="signUp-form" id="signup">
+
+            <form action="post" class="form" autocomplete="off">
+
+                <div class="form__head">
+                    <a href="#" class="form__close">&times;</a>
+                    <h2 class="heading-secondary">Sign up</h2>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="username" id="name" required>
+                    <!-- <lable for="name" class="form__label">Full name</lable> -->
+                </div>
+
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email" id="email" required>
+                    <!-- <lable for="name" class="form__label">Full name</lable> -->
+                </div>
+
+                <div class="form__group">
+                    <input type="password" class="form__input" placeholder="Password" id="password" required>
+                    <!-- <lable for="Email" class="form__label">Email adresse</lable> -->
+                </div>
+            </form>
+            <div class="form__btn-log">
+                <a href="#">sign up now</a>
+            </div>
+            <div class="form__sep">
+                or
+            </div>
+            <div class="form__btn-fb">
+                <a href="#">Continue with facebook</a>
+            </div>
+            <div class="form__btn-google">
+                <a href="#">Continue with google</a>
+            </div>
+
+            <div class="form__footer">
+                <a href="#" class="form__footer-link" onclick="login(event)">log in to your account</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Add post-->
+
+    <div class="poppost" id="poppost">
+
+
+
+        <div class="poppost__content">
+
+            <div class="poppost__head">
+                <h3 class="poppost__head-title">Add New Post</h3>
+                <a href="#" class="poppost__close">&times;</a>
+            </div>
+
+            <div class="poppost__body py">
+
+                <form>
+
+                    <div class="poppost__group">
+                        <div class="poppost__input">
+                            <div class="poppost__input-icon"> <span class="poppost__span"><i class="fas fa-pencil-alt"></i></span></div>
+                            <input type="text" class="poppost__input-text" placeholder="Title" required>
+                        </div>
+                    </div>
+
+                    <div class="poppost__group">
+
+                        <div class="poppost__input">
+                            <div class="poppost__input-icon"> <span class="poppost__span"><i class="fas fa-pencil-alt"></i></span></div>
+                            <textarea class="poppost__input-text" maxlength="4000" rows="50" placeholder="Your Post"></textarea>
+                        </div>
+                    </div>
+
+                    <input type="submit" class="btn btn-block btn-dark">
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- drop up -->
+    <div class="dropup" id="dropup">
+
+        <div class="dropup__card">
+            <a href="#" class="dropup__close">&times;</a>
+            <div class="dropup__item">
+                <a href="#" class="dropup__link"><i class="fas fa-bookmark"></i>Save post</a>
+
+            </div>
+            <div class="dropup__item">
+                <a href="#" class="dropup__link"><i class="fas fa-cog"></i>Edit Post</a>
+
+            </div>
+            <div class="dropup__item">
+                <a href="#" class="dropup__link"><i class="fas fa-trash"></i>Delete Post</a>
+            </div>
+            <div class="dropup__item">
+                <a href="#" class="dropup__link"><i class="fas fa-ban"></i>Hide Post</a>
+            </div>
+            <div class="dropup__item">
+                <a href="#" class="dropup__link"><i class="fas fa-bell"></i>Turn on notification on this post</a>
+            </div>
+            <div class="dropup__item">
+                <a href="#" class="dropup__link"><i class="fas fa-link"></i>copy link</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+<script>
+    let x = document.getElementById("login")
+    let y = document.getElementById("signup")
+
+
+    register = (e) => {
+        e.preventDefault()
+        x.style.opacity = 0
+        x.style.pointerEvents = "none"
+        y.style.opacity = 1
+    }
+
+    login = (e) => {
+
+        e.preventDefault()
+        x.style.opacity = 1
+        x.style.pointerEvents = "all"
+        y.style.opacity = 0
+
+    }
+
+    let icon = document.getElementById("icon")
+
+    let fn = ()=> {
+        document.getElementById("setting").classList.toggle("show")  
+        
+    }  
+
+    icon.addEventListener("click",fn)
+
+    
+
+   
+</script>
+
+</html>

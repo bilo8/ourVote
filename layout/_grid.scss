@@ -1,0 +1,104 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 8fr 4fr;
+    grid-template-rows:1fr 8fr 1fr 1fr;
+    grid-template-areas: "nav nav " "main like" "more more" "footer footer";
+    grid-gap: 2rem;
+    background-color: linear-gradient((to bottom right,rgba(0,0,0,.5),rgba(9,9,9,.5)));
+    
+    @include respond (tab-port) {
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr 8fr 1fr 1fr;
+        grid-template-areas: "nav" " main" " more" " footer";
+    }
+    @include respond (phone) {
+        grid-template-columns:  1fr;
+        grid-template-rows: .4fr 8fr 1fr 1fr;
+        grid-template-areas: " nav" " main" " more" "footer";
+    }
+}
+
+header {
+    grid-area: nav;
+    width: 100%;
+
+}
+
+main {
+    background-color: $color-white;
+    grid-area: main;
+    margin-left: 22rem;
+    margin-right: 3rem;
+
+    @include respond(tab-port) {
+        margin-left:1rem;
+        margin-right: 1rem;
+    }
+
+    @include respond (phone) {
+        margin-left:1rem;
+        margin-right: 1rem;
+    }
+    
+}
+
+// .sidebar {
+//     background-color: $color-white;
+//     grid-area: sidebar;
+//     margin-left:10rem;
+
+
+// }
+
+.like {
+    background-color: $color-white;
+    grid-area: like;
+    margin-right:20rem;
+
+    @include respond(tab-port) {
+       display: none;
+    }
+
+    @include respond (phone) {
+        display: none;
+    }
+}
+
+.card__more {
+    grid-area: more;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    background-color: #FAF7F7;
+    margin: 1rem 30rem;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+
+    @include respond (phone) {
+        margin: 1rem 10rem;
+    }
+}
+
+footer {
+    grid-area: footer;
+}
+
+.row {
+    max-width: 100%;
+    margin: 0 auto;
+    
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+
+    }
+
+    @include respond(phone) {
+        margin: 0 1rem;
+    }
+
+
+}
